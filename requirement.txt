@@ -1,0 +1,5 @@
+RESTinstance
+robotframework
+robotframework-appiumlibrary
+selenium
+Appium-Python-Client
