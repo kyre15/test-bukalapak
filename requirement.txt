@@ -3,3 +3,4 @@ robotframework
 robotframework-appiumlibrary
 selenium
 Appium-Python-Client
+robotframework-seleniumlibrary
