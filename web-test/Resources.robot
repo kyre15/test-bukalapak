@@ -7,7 +7,7 @@ Resource          Keywords/Logics/_IMPORT_LOGICS.robot
 Resource          Setup.robot
 
 *** Variables ***
-${SERVER}                 https://www.bukalapak.com/
+${SERVER}                 bukalapak.com
 
 ***Keywords***
 Setup Chromedriver

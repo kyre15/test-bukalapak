@@ -21,3 +21,16 @@ Verify Login Button
 
 Click Login Button
     Click Element  //p[text()="Login"]
+
+Verify Search Field
+    Wait Until Element Is Visible  id=v-omnisearch__input  timeout=3
+
+Input Search Item
+    [Arguments]  ${item}
+    Input Text  id=v-omnisearch__input  ${item}
+
+Verify Search Button
+    Wait Until Element Is Visible  css=.v-omnisearch__submit  timeout=3
+
+Click Search Button
+    Click Element  css=.v-omnisearch__submit

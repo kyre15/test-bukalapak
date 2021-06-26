@@ -58,6 +58,44 @@ Verify Verification Button
 Click Verification Button
     Click Element  //Button//span[text()="Verifikasi"] 
 
+Verify Title Daftar dulu
+    Wait Until Element Is Visible  //p[text()="Daftar dulu, yuk"] timeout=3
+
+Verify Subtitle Daftar dulu
+    Wait Until Element Is Visible  //p[text()="Isi nama dan password"] timeout=3
+
+Verify Nama lengkap Field
+    Wait Until Element Is Visible  //label[text()="Nama lengkap"]//preceding-sibling::input[@class="bl-text-field__input"]  timeout=3
+
+Input Nama lengkap
+    [Arguments]  ${name}
+    Input Text  //label[text()="Nama lengkap"]//preceding-sibling::input[@class="bl-text-field__input"]  ${name}
+
+Verify Password Field
+    Wait Until Element Is Visible  //label[text()="Password"]//preceding-sibling::input[@class="bl-text-field__input"]  timeout=3
+
+Input Password
+    [Arguments]  ${password}
+    Input Text  //label[text()="Password"]//preceding-sibling::input[@class="bl-text-field__input"]  ${password}
+
+Verify Simpan Button
+    Wait Until Element Is Visible  //button//span[text()="Simpan"]  timeout=3
+
+Click Simpan Button
+    Click Element  //button//span[text()="Simpan"]
+
+Verify Title Success Register
+    Wait Until Element Is Visible  //p[text()="Akun kamu berhasil dibuat!"]  timeout=3
+
+Verify Subtitle Success Register
+    Wait Until Elemnet Is Visible  //p[text()="Sekarang kamu bisa bebas belanja semua kebutuhan di Bukalapak."]  timeout=3
+
+Verify Mulai Belanja Button
+    Wait Until Element Is Visible  //button//span[test()="Mulai belanja"]  timeout=3
+
+Click Mulai Belanja Button
+    Click Element  //button//span[test()="Mulai belanja"]
+
 # css=.header-login__more .bento
 
 # Select Language Without Login
